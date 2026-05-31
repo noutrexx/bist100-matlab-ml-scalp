@@ -23,7 +23,7 @@ The `rsi.m` script runs an optimization loop over the training dataset. It itera
 
 ### Price Action and Executed Trades
 
-<img width="957" height="608" alt="grafik" src="https://github.com/user-attachments/assets/e0cd103a-3085-419d-acad-ba611f09c662" />
+![Price and Trade Chart](https://github.com/user-attachments/assets/282e4921-a080-443b-ac5f-f0c55e9b72b8)
 
 ### Trade Summary
 
