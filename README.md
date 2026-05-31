@@ -19,7 +19,7 @@ The project uses a machine learning approach by splitting the historical BIST 10
 
 The `rsi.m` script runs an optimization loop over the training dataset. It iterates through RSI thresholds ranging from 68 to 80, evaluating backtest performance to select the threshold that yields the highest return.
 
-## 📊 Results
+##  Results
 
 ### Price Action and Executed Trades
 
