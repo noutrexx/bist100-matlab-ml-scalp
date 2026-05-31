@@ -23,17 +23,16 @@ The `rsi.m` script runs an optimization loop over the training dataset. It itera
 
 ### Price Action and Executed Trades
 
-![grafik](https://github.com/user-attachments/assets/4dffd6ee-e9b4-4b6b-90c4-6bfa3ad8a157)
+![grafik](grafik.png)
 
 ### Trade Summary
 
-![sonuc](https://github.com/user-attachments/assets/26a2cc8d-16cf-448b-8db7-ec880b53f9c6)
+![sonuc](sonuc.png)
 
 ```text
 Selected RSI Threshold : 68
 Strategy Final Value   : 50,826.73 TL
 Buy & Hold Final Value : 48,894.16 TL
-
 ```
 
 **Conclusion:** Starting with an initial capital of 10,000 TL, the proposed algorithmic strategy successfully outperformed the traditional Buy-and-Hold method on the test dataset.
