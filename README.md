@@ -23,11 +23,13 @@ The `rsi.m` script runs an optimization loop over the training dataset. It itera
 
 ### Price Action and Executed Trades
 
-![Price and Trade Chart](https://github.com/user-attachments/assets/282e4921-a080-443b-ac5f-f0c55e9b72b8)
+<img width="957" height="608" alt="grafik" src="https://github.com/user-attachments/assets/4dffd6ee-e9b4-4b6b-90c4-6bfa3ad8a157" />
+
 
 ### Trade Summary
 
-<img width="247" height="262" alt="Trade Summary" src="https://github.com/user-attachments/assets/39b96055-73eb-4bd1-8d5e-ea23a587e651" />
+<img width="247" height="262" alt="sonuc" src="https://github.com/user-attachments/assets/26a2cc8d-16cf-448b-8db7-ec880b53f9c6" />
+
 
 ```text
 Selected RSI Threshold : 68
