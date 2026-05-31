@@ -23,7 +23,7 @@ The `rsi.m` script runs an optimization loop over the training dataset. It itera
 
 ### Price Action and Executed Trades
 
-<img width="957" height="608" alt="Price and Trade Chart" src="https://github.com/user-attachments/assets/282e4921-a080-443b-ac5f-f0c55e9b72b8" />
+<img width="957" height="608" alt="grafik" src="https://github.com/user-attachments/assets/e0cd103a-3085-419d-acad-ba611f09c662" />
 
 ### Trade Summary
 
@@ -44,8 +44,6 @@ Buy & Hold Final Value : 48,894.16 TL
 bist100-matlab-ml-scalp/
 ├── main.m               # Main execution script
 ├── rsi.m                # RSI calculation and threshold optimization
-├── grafik.png           # Chart image showing prices and trade markers
-├── sonuc.png            # Screenshot of the terminal output/results
 ├── islemler.txt         # Auto-generated trade log and summary
 └── data/
     ├── egitim_verisi.csv  # Training dataset
