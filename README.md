@@ -64,7 +64,7 @@ bist100-matlab-ml-scalp/
 ## How to Run
 
 1. Open the project folder in MATLAB.
-2. Type the following command in the Command Window and press Enter:
+2. Type the following command in the Command Window and press Enter::
 
 ```matlab
 main
