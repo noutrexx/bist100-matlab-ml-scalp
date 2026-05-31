@@ -1,7 +1,7 @@
 function en_iyi_rsi = rsi(fiyat, para_ilk)
     % rsi degeri hesaplanir
     fark = [0; diff(fiyat)];
-    artis = max(fark, 0);
+    artis = max(fark, 0); 
     azalis = abs(min(fark, 0));
     ort_artis = movmean(artis, [13 0]);
     ort_azalis = movmean(azalis, [13 0]);
