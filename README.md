@@ -1,4 +1,5 @@
 
+
 # BIST 100 MATLAB Algorithmic Trading & Backtesting Project
 
 This is a simple backtesting project written in MATLAB for the BIST 100 index. It utilizes an algorithmic trading strategy based on Moving Averages (MA) and the Relative Strength Index (RSI).
@@ -23,8 +24,8 @@ The `rsi.m` script runs an optimization loop over the training dataset. It itera
 
 ### Price Action and Executed Trades
 
+<img width="957" height="608" alt="grafik" src="https://github.com/user-attachments/assets/8bc3e83f-89f1-4932-877d-14bf04ba9110" />
 
-<img width="247" height="262" alt="sonuc" src="https://github.com/user-attachments/assets/d8fe8b37-3ea9-43fd-b2ef-f90c4097de2d" />
 
 ### Trade Summary
 
