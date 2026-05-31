@@ -1,6 +1,3 @@
-Haklısınız, kodu `markdown` blokları içine aldığım için doğrudan kopyaladığınızda veya MATLAB/GitHub üzerinde görüntülerken biçimlendirme hatası (veya sadece yazı olarak kalma durumu) yaşıyor olabilirsiniz.
-
-Aşağıdaki metni en baştan sona kadar seçip doğrudan dosyanıza yapıştırabilirsiniz (herhangi bir kod bloğu içine almadım):
 
 # BIST 100 MATLAB Algorithmic Trading & Backtesting Project
 
