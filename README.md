@@ -4,7 +4,7 @@
 
 This is a simple backtesting project written in MATLAB for the BIST 100 index. It utilizes an algorithmic trading strategy based on Moving Averages (MA) and the Relative Strength Index (RSI).
 
-## Methodology
+## Methodology 
 
 The project uses a machine learning approach by splitting the historical BIST 100 data into two distinct datasets: **Training** and **Testing**. The historical data is used to train the model and optimize the RSI threshold. Once the best threshold is found, it is applied to the separate test dataset and evaluated against a standard Buy-and-Hold strategy.
 
