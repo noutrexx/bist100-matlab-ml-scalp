@@ -29,6 +29,9 @@ The `rsi.m` script runs an optimization loop over the training dataset. It itera
 
 ### Trade Summary
 
+<img width="247" height="262" alt="sonuc" src="https://github.com/user-attachments/assets/5346839d-76e5-432f-bdf9-cceae0d8052f" />
+
+
 ```text
 Selected RSI Threshold : 68
 Strategy Final Value   : 50,826.73 TL
