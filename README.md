@@ -23,6 +23,9 @@ The `rsi.m` script runs an optimization loop over the training dataset. It itera
 
 ### Price Action and Executed Trades
 
+
+<img width="247" height="262" alt="sonuc" src="https://github.com/user-attachments/assets/d8fe8b37-3ea9-43fd-b2ef-f90c4097de2d" />
+
 ### Trade Summary
 
 ```text
