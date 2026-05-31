@@ -20,11 +20,16 @@ Projede iki farkli veri seti kullanilmistir. Eski BIST 100 verisi egitim verisi 
 
 ## Sonuc
 
-![fiyat ve islemler](grafik.png)<img width="247" height="262" alt="sonuc" src="https://github.com/user-attachments/assets/39b96055-73eb-4bd1-8d5e-ea23a587e651" />
+![fiyat ve islemler]
+
 <img width="957" height="608" alt="grafik" src="https://github.com/user-attachments/assets/282e4921-a080-443b-ac5f-f0c55e9b72b8" />
 
 
-![islem ozeti](sonuc.png)
+
+
+![islem ozeti]
+
+<img width="247" height="262" alt="sonuc" src="https://github.com/user-attachments/assets/39b96055-73eb-4bd1-8d5e-ea23a587e651" />
 
 ```
 Secilen RSI: 68
