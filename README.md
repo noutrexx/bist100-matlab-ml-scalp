@@ -1,73 +1,80 @@
-# BIST 100 MATLAB Al-Sat Projesi
+```markdown
+# BIST 100 MATLAB Algorithmic Trading & Backtesting Project
 
-MATLAB ile yazilmis, BIST 100 endeksi uzerinde hareketli ortalama ve RSI tabanli basit bir al-sat backtest projesidir.
+This is a simple backtesting project written in MATLAB for the BIST 100 index. It utilizes an algorithmic trading strategy based on Moving Averages (MA) and the Relative Strength Index (RSI).
 
-## Proje Mantigi
+##  Methodology
 
-Projede iki farkli veri seti kullanilmistir. Eski BIST 100 verisi egitim verisi olarak kullanilip en iyi RSI siniri secilmistir. Secilen sinir daha sonra ayri bir test verisi uzerinde denenip al-tut yontemiyle karsilastirilmistir.
+The project uses a machine learning approach by splitting the historical BIST 100 data into two distinct datasets: **Training** and **Testing**. The historical data is used to train the model and optimize the RSI threshold. Once the best threshold is found, it is applied to the separate test dataset and evaluated against a standard Buy-and-Hold strategy.
 
-### Strateji
+### The Strategy
 
-- **Kisa ortalama:** 3 gunluk hareketli ortalama
-- **Uzun ortalama:** 100 gunluk hareketli ortalama
-- Kisa ortalama uzun ortalamanin **ustune cikarsa** AL sinyali olusur
-- Kisa ortalama uzun ortalamanin **altina inerse** SAT sinyali olusur
-- RSI filtresi: RSI secilen sinirin **ustundeyse** yeni alim yapilmaz
+- **Short-Term MA:** 3-day moving average.
+- **Long-Term MA:** 100-day moving average.
+- **Buy Signal:** Triggered when the short-term MA crosses **above** the long-term MA (Golden Cross).
+- **Sell Signal:** Triggered when the short-term MA crosses **below** the long-term MA (Death Cross).
+- **RSI Filter:** If the current RSI is **above** the optimized threshold (indicating an overbought market), the algorithm will block new buy orders.
 
-### Egitim
+### Optimization (Training)
 
-`rsi.m` fonksiyonu egitim verisi uzerinde 68 ile 80 arasindaki RSI sinirlarini dener ve en iyi sonucu veren degeri secer.
+The `rsi.m` script runs an optimization loop over the training dataset. It iterates through RSI thresholds ranging from 68 to 80, evaluating backtest performance to select the threshold that yields the highest return.
 
-## Sonuc
+## 📊 Results
 
-fiyat ve islemler
+### Price Action and Executed Trades
 
-<img width="957" height="608" alt="grafik" src="https://github.com/user-attachments/assets/282e4921-a080-443b-ac5f-f0c55e9b72b8" />
+<img width="957" height="608" alt="Price and Trade Chart" src="https://github.com/user-attachments/assets/282e4921-a080-443b-ac5f-f0c55e9b72b8" />
 
+### Trade Summary
 
+<img width="247" height="262" alt="Trade Summary" src="https://github.com/user-attachments/assets/39b96055-73eb-4bd1-8d5e-ea23a587e651" />
 
-
-islem ozeti
-
-<img width="247" height="262" alt="sonuc" src="https://github.com/user-attachments/assets/39b96055-73eb-4bd1-8d5e-ea23a587e651" />
-
-```
-Secilen RSI: 68
-Strateji: 50826.73
-Al-tut:   48894.16
-```
-
-Baslangic sermayesi 10.000 TL ile strateji, al-tut yontemini gecmistir.
-
-## Dosyalar
+```text
+Selected RSI Threshold : 68
+Strategy Final Value   : 50,826.73 TL
+Buy & Hold Final Value : 48,894.16 TL
 
 ```
+
+**Conclusion:** Starting with an initial capital of 10,000 TL, the proposed algorithmic strategy successfully outperformed the traditional Buy-and-Hold method on the test dataset.
+
+##  Project Structure
+
+```text
 bist100-matlab-ml-scalp/
-├── main.m               # ana kod
-├── rsi.m                # rsi hesaplama ve sinir secimi
-├── grafik.png           # fiyat ve islem grafigi
-├── sonuc.png            # islem ozeti ekran goruntusu
-├── islemler.txt         # program calisinca olusturulan islem ozeti
+├── main.m               # Main execution script
+├── rsi.m                # RSI calculation and threshold optimization
+├── grafik.png           # Chart image showing prices and trade markers
+├── sonuc.png            # Screenshot of the terminal output/results
+├── islemler.txt         # Auto-generated trade log and summary
 └── data/
-    ├── egitim_verisi.csv
-    └── test_verisi.csv
+    ├── egitim_verisi.csv  # Training dataset
+    └── test_verisi.csv    # Testing dataset
+
 ```
 
-## Veri Kaynaklari
+##  Data Sources
 
-- **Egitim verisi:** [Kaggle — BIST100 Turkish Stock Market Dataset](https://www.kaggle.com/datasets/umar47/bist100-turkish-stock-market-dataset?resource=download)
-- **Test verisi:** [github.com/zakcali/pandas-ta2numba](https://raw.githubusercontent.com/zakcali/pandas-ta2numba/main/XU100-1D.csv)
+* **Training Data:** [Kaggle — BIST100 Turkish Stock Market Dataset](https://www.kaggle.com/datasets/umar47/bist100-turkish-stock-market-dataset?resource=download)
+* **Test Data:** [github.com/zakcali/pandas-ta2numba](https://raw.githubusercontent.com/zakcali/pandas-ta2numba/main/XU100-1D.csv)
 
-## Calistirma
+##  How to Run
 
-MATLAB'da proje klasorunu ac ve su komutu yaz:
+1. Open the project folder in MATLAB.
+2. Type the following command in the Command Window and press Enter:
 
 ```matlab
 main
+
 ```
 
-Program calisinca:
-- Egitim verisinden en iyi RSI siniri secilir
-- Test verisinde al-sat islemi yapilir
-- Grafik gosterilir
-- `islemler.txt` dosyasi olusturulur
+**Upon execution, the program will automatically:**
+
+* Determine the optimal RSI threshold using the training data.
+* Execute the backtest (buy/sell trades) on the test data.
+* Display a plotted chart of price movements and trade entry/exit points.
+* Generate an `islemler.txt` file containing the detailed trade log.
+
+```
+
+```
